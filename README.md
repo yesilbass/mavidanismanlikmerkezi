@@ -1,16 +1,57 @@
-# React + Vite
+# Mavi Danışmanlık Merkezi — Web Sitesi
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bursa Nilüfer'de çocuk ve ergen danışmanlığı sunan **Mavi Danışmanlık Merkezi** için Next.js ile geliştirilmiş tam kapsamlı web sitesi.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Framework:** Next.js 14 (App Router)
+- **Language:** JavaScript (.js / .jsx)
+- **Styling:** Tailwind CSS
+- **Forms:** Formspree
+- **Markdown:** gray-matter + remark
+- **Deployment:** Vercel
 
-## React Compiler
+## Prerequisites
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Node.js 18+
+- npm
 
-## Expanding the ESLint configuration
+## Kurulum
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm install
+cp .env.local.example .env.local
+# .env.local içindeki değerleri doldurun
+npm run dev
+```
+
+Geliştirme sunucusu http://localhost:3000 adresinde başlar.
+
+## Build & Deploy
+
+```bash
+npm run build   # production build
+npm start       # production sunucusu (lokal)
+```
+
+Vercel'e deploy için: bkz. `DEPLOYMENT.md`
+
+## Proje Yapısı
+
+```
+app/                   Next.js App Router sayfaları
+components/            Paylaşılan UI bileşenleri
+content/posts/         Blog yazıları (.md)
+lib/
+  posts.js             Blog yazısı okuma yardımcıları
+  site-config.js       İşletme bilgileri sabitleri
+public/                Statik dosyalar (favicon vb.)
+```
+
+## İşletme Bilgileri
+
+- **İsim:** Mavi Danışmanlık Merkezi
+- **Adres:** Fatih Sultan Mehmet Bulvarı 47B, Nilüfer, Bursa
+- **Telefon:** +90 553 159 53 50
+- **Instagram:** https://www.instagram.com/mavi_danismanlik_merkezi/
+- **E-posta:** iletisim@mavidanismanlik.com *(placeholder — güncellenecek)*

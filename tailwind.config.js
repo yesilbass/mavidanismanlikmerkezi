@@ -1,0 +1,70 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    './app/**/*.{js,jsx}',
+    './components/**/*.{js,jsx}',
+    './lib/**/*.{js,jsx}',
+  ],
+  theme: {
+    extend: {
+      colors: {
+        blue: {
+          50: '#eff6ff',
+          100: '#dbeafe',
+          200: '#bfdbfe',
+          300: '#93c5fd',
+          400: '#60a5fa',
+          500: '#3b82f6',
+          600: '#2563eb',
+          700: '#1d4ed8',
+          800: '#1e40af',
+          900: '#1e3a8a',
+        },
+        mavi: {
+          50: '#f0f7ff',
+          100: '#e0effe',
+          200: '#baddfd',
+          300: '#7dc0fb',
+          400: '#389ef7',
+          500: '#0e82e8',
+          600: '#0265c6',
+          700: '#0351a1',
+          800: '#074585',
+          900: '#0c3a6e',
+        },
+        coral: {
+          50: '#fff5f0',
+          100: '#ffe8df',
+          200: '#ffd0be',
+          300: '#ffae91',
+          400: '#ff8060',
+          500: '#f95d3a',
+          600: '#e6421e',
+          700: '#c23315',
+          800: '#9f2c15',
+          900: '#822918',
+        },
+        sage: {
+          50: '#f3f8f4',
+          100: '#e4f0e7',
+          200: '#c9e1cf',
+          300: '#9ec9aa',
+          400: '#6daa7e',
+          500: '#4a8e5f',
+          600: '#38724b',
+          700: '#2d5c3d',
+          800: '#274a32',
+          900: '#213d2a',
+        },
+      },
+      fontFamily: {
+        sans: ['var(--font-plus-jakarta)', 'system-ui', 'sans-serif'],
+      },
+      borderRadius: {
+        '2xl': '1rem',
+        '3xl': '1.5rem',
+      },
+    },
+  },
+  plugins: [],
+}
